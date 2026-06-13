@@ -7,9 +7,9 @@ from app.middleware import setup_cors
 
 app = FastAPI(
     title=settings.APP_NAME,
-    version="1.0.0",
+    version="2.0.0",
 )
-setup_cors(app)
+setup_cors(app);
 
 app.include_router(auth_router)
 
