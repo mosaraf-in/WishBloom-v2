@@ -1,0 +1,17 @@
+fastapi[standard]
+
+sqlalchemy
+psycopg[binary]
+alembic
+
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+
+pydantic-settings
+email-validator
+python-multipart
+
+cloudinary
+
+pytest
