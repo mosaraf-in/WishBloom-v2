@@ -7,7 +7,7 @@ def setup_cors(app):
         allow_origins=[
             "http://localhost:5173",
             "http://localhost:5174",
-            "https://wish-bloom-v1.vercel.app",
+            "https://wish-bloom-v2.vercel.app",
         ],
         allow_credentials=True,
         allow_methods=["*"],
