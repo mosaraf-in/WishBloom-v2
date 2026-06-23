@@ -2,6 +2,8 @@ import { Heart, ChevronDown } from "lucide-react";
 import { TbMusic,TbMusicOff } from "react-icons/tb";
 import { animateScroll, scroller } from "react-scroll"
 import { useEffect, useRef, useState } from "react";
+import { BiArrowBack } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 export default function CoverSection({ wishData, isVideoPlaying }) {
 
@@ -82,6 +84,24 @@ export default function CoverSection({ wishData, isVideoPlaying }) {
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-black/75" />
 
+      <Link  // make button
+      to="/"
+  // onClick={() => navigate(-1)} when button made
+  className="
+    absolute
+    top-4
+    left-4
+    z-50
+    rounded-full
+    bg-white/20
+    backdrop-blur-md
+    px-3
+    py-2
+    text-white
+  "
+>
+  <BiArrowBack size={22}/>
+</Link>
       {/* Music Button */}
       <button onClick={toggleMusic} className="absolute right-5 top-5 z-30 flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-2 text-white backdrop-blur-md">
         {isPlaying?(

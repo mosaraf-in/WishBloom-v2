@@ -48,12 +48,12 @@ export default function HeroSection() {
           </ul>
 
           <div className="mt-7 flex gap-3 sm:flex-row">
-            <button
-              onClick={() => setOpenModal(true)}
+            <Link
+              to="/create-wish"
               className="rounded-2xl bg-gradient-to-r from-pink-500 to-fuchsia-500 px-6 py-2 md:px-7 md:py-3 text-center text-lg font-semibold text-white shadow-xl shadow-pink-500/30 transition hover:scale-[1.02]"
             >
               Get Started
-            </button>
+            </Link>
 
             <Link
               to="/wish"

@@ -7,6 +7,7 @@ import EndingSection from "../components/wish/EndingSection";
 // import coverImg from "../assets/wish-cover.jpeg"
 import wishImg from "../assets/wish-img.jpeg"
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom"
 
 export default function PublicWish() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)

@@ -15,7 +15,7 @@ export default function MobileDrawer({
 }) {
   return (
     <div
-      className={`fixed top-[64.2px] right-0 z-[70] h-[calc(100vh-64.2px)] w-[77%] rounded-l-2xl max-w-[340px] bg-white border-l border-pink-100 border-t-0 shadow-2xl transition-all duration-300 md:hidden ${
+      className={`fixed top-[60.8px] right-0 z-[70] h-[calc(100vh-64.2px)] w-[77%] rounded-l-2xl max-w-[340px] bg-white border-l border-pink-100 border-t-0 shadow-2xl transition-all duration-300 md:hidden ${
         open ? "translate-x-0" : "translate-x-full"
       }`}
     >
